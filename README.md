@@ -23,13 +23,14 @@ When you untoggle the this extension:
 - the iGPU returns to its default `auto` and 
 - the CPU floor rises to its defaults `2Ghz`.
 
-Note that the CPU support frequencies down to 625Mhz but there isn't much to gain by going this low, and the scheduler/governor doesn't want to go so low anyways.
-
-Toggling the extension will prompt you for authentication as it requires root privileges, which is fine if you have a fingerprint reader.
-
 ## How it does it
 
 - `/sys/devices/system/cpu/cpu*/cpufreq` is forced to 1Ghz or 2Ghz
 - `/sys/class/drm/card0/device/power_dpm_force_performance_level` is forced to `low` or `auto` 
 
-This could probably work on other AMD APUs but to my knowledge older 780M-based APUs are very well capable to reach 1.5W PPT on their own. 
+## Notes
+
+- The CPU support frequencies down to 625Mhz but there isn't much to gain by going this low, and the scheduler/governor doesn't want to go so low anyways.
+- Toggling the extension will prompt you for authentication as it requires root privileges, which is fine if you have a fingerprint reader.
+- This could probably work on other AMD APUs but to my knowledge older 780M-based APUs are very well capable to reach 1.5W PPT on their own.
+- With the extension enabled, gpt-oss-20B Q4 on Vulkan reaches 15t/s with a PPT of 14W max. This is the same thoughput as a 780M. For reference, the 8060S outputs 55+t/s with the extension off and 70W PPT.
