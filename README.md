@@ -34,3 +34,4 @@ When you untoggle the this extension:
 - Toggling the extension will prompt you for authentication as it requires root privileges, which is fine if you have a fingerprint reader.
 - This could probably work on other AMD APUs but to my knowledge older 780M-based APUs are very well capable to reach 1.5W PPT on their own.
 - With the extension enabled, gpt-oss-20B Q4 on Vulkan reaches 15t/s with a PPT of 14W max. This is the same thoughput as a 780M. For reference, the 8060S outputs 55+t/s with the extension off and 70W PPT.
+- During testing off the APU I managed to reach 2.5W PPT but cannot recall with which settings/optimization. So there is still a little bit more to shave.
