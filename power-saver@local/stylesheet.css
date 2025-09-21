@@ -1,0 +1,9 @@
+/* Power Saver Extension Styles */
+
+.power-saver-active {
+    color: #14ba88 !important;
+}
+
+.power-saver-active:hover {
+    color: #14ba88 !important;
+}
