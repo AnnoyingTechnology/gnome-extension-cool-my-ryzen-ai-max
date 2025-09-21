@@ -14,8 +14,8 @@ This extension forces the iGPU to its lower power mode instead of auto and allow
 ## Results
 
 With this extension **ON** and the following power profile : 
-- with "Balanced" gets you **4W PPT**.
-- with "Power Saver" gets you down to **3W PPT**.
+- with "Balanced" you get **4W PPT**.
+- with "Power Saver" you get down to **3W PPT**.
 
 ![Screenshot](./screenshot-ppd.png)
 
