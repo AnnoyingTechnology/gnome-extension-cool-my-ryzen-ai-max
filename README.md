@@ -17,6 +17,8 @@ With this extension **ON** and the following power profile :
 - with "Balanced" gets you **4W PPT**.
 - with "Power Saver" gets you down to **3W PPT**.
 
+![Screenshot](./screenshot-ppd.png)
+
 When you untoggle the this extension: 
 - the iGPU returns to its default `auto` and 
 - the CPU floor rises to its defaults `2Ghz`.
